@@ -14,6 +14,8 @@ To use it just drop the .py file into the base directory where you keep your mov
 MOVE_FILES = True   # True/False Move files to base directory & delete old sub directories.
 TEST_MODE = True   # True/False Test mode will print old/new filenames instead of renaming and moving the files.
 ```
-There are two config options at top of the program, the first MOVE_FILES lets you diced if you want to move the movie files to the base directiory and delete the old sub directories or leave them where they are
+There are two config options at top of the program
 
-The second option is TEST_MODE, I highly recomend you use this first.  It will print out the old and new paths without moving any files.
+**MOVE_FILES** lets you decide if you want to move the movie files to the base directiory and delete the old sub directories or leave the movie files where they are
+
+**TEST_MODE**, I highly recomend you use this first.  It will print out the old and new paths without moving any files.
