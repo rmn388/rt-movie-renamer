@@ -1,5 +1,7 @@
 # rt-movie-files
-Renames all movie files in a folder to include rotten tomatoes scores
+Written in Python 3.4
+
+Renames all movie files in a folder to include rotten tomatoes critic and audience review scores
 
 To use it just drop the .py file into the base directory where you keep your movies.
 
@@ -18,4 +20,4 @@ There are two config options at top of the program
 
 **MOVE_FILES** lets you decide if you want to move the movie files to the base directiory and delete the old sub directories or leave the movie files where they are
 
-**TEST_MODE**, This is enabled by default and I highly recomend runnigng it this way first.  It will print out the old and new paths without moving any files, so you can check to make sure it works correctly.
+**TEST_MODE** This is enabled by default and I highly recomend runnigng it this way first.  It will print out the old and new paths without moving any files, so you can check to make sure it works correctly.
