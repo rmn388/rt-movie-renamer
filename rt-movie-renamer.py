@@ -11,7 +11,8 @@ not_found = found = 0
 
 def check_url():
     """ Tests for a url match
-    Rotten Tomatoes URLs can be /m/movie_title or /m/movie_title_year or /m/movie_title-year
+    Rotten Tomatoes URLs can be formatted a few different ways
+    /m/movie_title or /m/movie_title_year or /m/movie_title-year
     """
     url_base = 'http://www.rottentomatoes.com/m/' + underscore_title
     tomato_url = url_base + '_' + movie_year + '/'
@@ -30,7 +31,7 @@ def check_url():
     
 
 def get_rating(tomato_html):
-    """ Get's the Critic and Audience Ratings using Beatiful soup
+    """ Get's the Critic and Audience Ratings from the HTML using Beatiful soup
     """
     rating_critic = rating_audience = 'na'
     bs4_obj = bs4.BeautifulSoup(tomato_html.text, "html.parser")
