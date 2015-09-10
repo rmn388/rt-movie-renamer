@@ -1,7 +1,7 @@
 import requests, os, bs4, re, shutil
 
-MOVE_FILES = True # True/False Move files to base directory & delete old folders.
-TEST_MODE = False # True/False Test mode will print old/new filenames instead of renaming and moving the files.
+MOVE_FILES = True   # True/False Move files to base directory & delete old sub directories.
+TEST_MODE = True   # True/False Test mode will print old/new filenames instead of renaming and moving the files.
 
 file_name_regex = re.compile('(.*?)(?:[\[\(])*([0-9]{4})(.*)')
 video_extensions = set('3g2 3gp asf asx avi flv m4v mkv mov mp4 mpg rm swf vob wmv'.split())
@@ -86,7 +86,8 @@ for subfoldername, subfolder, filenames in os.walk(base_dir):
                     elif not TEST_MODE:
                         shutil.rmtree(subfoldername)
                 
-
 print('')                  
-print('found:',found,'not found:',not_found)              
+print('found:',found,'not found:',not_found)
+if TEST_MODE:
+    print('Test Complete.  Change TEST_MODE variable to False to run the program live!')
 input('\nPress Enter to close')
