@@ -1,7 +1,7 @@
-# rt-movie-files
+# rt-movie-renamer
 Written in Python 3.4
 
-Renames all movie files in a folder to include rotten tomatoes critic and audience review scores
+Renames all movie files in a folder & subfolerds to include rotten tomatoes critic and audience review scores
 
 To use it just drop the .py file into the base directory where you keep your movies.
 
