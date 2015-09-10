@@ -42,6 +42,9 @@ def get_rating(tomato_html):
     return rating_critic, rating_audience
 
 
+
+
+
 for subfoldername, subfolder, filenames in os.walk(base_dir): 
     for filename in filenames:                  
         file_extention = filename[filename.rfind(".")+1:]
