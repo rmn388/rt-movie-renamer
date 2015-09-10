@@ -1,5 +1,5 @@
-requests
 os
 bs4
 re
 shutil
+requests
