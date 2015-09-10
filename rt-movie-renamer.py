@@ -1,4 +1,3 @@
-# deal with srt (subtitles) if moving files
 import requests, os, bs4, re, shutil
 
 MOVE_FILES = True # True/False Move files to base directory & delete old folders.
