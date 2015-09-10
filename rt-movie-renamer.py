@@ -29,7 +29,6 @@ def check_url():
         return tomato_html
     return 
     
-
 def get_rating(tomato_html):
     """ Get's the Critic and Audience Ratings from the HTML using Beatiful soup
     """
@@ -41,10 +40,6 @@ def get_rating(tomato_html):
     for row in bs4_obj.find_all('div',attrs={"class" : "meter-value"}):
         rating_audience = row.text.strip()
     return rating_critic, rating_audience
-
-
-
-
 
 for subfoldername, subfolder, filenames in os.walk(base_dir): 
     for filename in filenames:                  
