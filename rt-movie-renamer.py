@@ -57,7 +57,7 @@ for subfoldername, subfolder, filenames in os.walk(base_dir):
 
                 if (tomato_html):
                     rating_critic, rating_audience = get_rating(tomato_html)
-                    new_name =  "\\" + movie_title.title() + " (" + movie_year + ") C-" + rating_critic + " A-" + rating_audience + "." + file_extention
+                    new_name =  "\\" + movie_title.title() + " [" + movie_year + "] C-" + rating_critic + " A-" + rating_audience + "." + file_extention
                     print(new_name)
                     found += 1
                 else:

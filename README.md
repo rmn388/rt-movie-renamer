@@ -7,7 +7,7 @@ To use it just drop the .py file into the base directory where you keep your mov
 
 1. The program will find all movie files within the main directory and sub directories.
 2. Check for each on RottenTomatoes.com
-3. If a match is found it will rename the file to the format 'Movie Title (year) C-00% A-00%.ext'
+3. If a match is found it will rename the file to the format 'Movie Title [year] C-00% A-00%.ext'
 4. Then there is an option to move all movie files to the base directory and delete their old subdirectories.
 
 # Config Options
